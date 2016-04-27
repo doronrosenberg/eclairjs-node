@@ -47,6 +47,7 @@ You can also try out **EclairJS** in Jupyter notebooks running under the [IBM Bl
 * [API Docs](https://github.com/EclairJS/eclairjs-node/wiki/API-Documentation)
 * [Wiki](https://github.com/EclairJS/eclairjs-node/wiki)
 * [Presentations](https://github.com/EclairJS/eclairjs-node/wiki/Project-and-Community#presentations)
+* [Examples](https://github.com/EclairJS/eclairjs-node/tree/master/examples)
 
 ## Community
 * [Google Group](https://groups.google.com/forum/#!forum/eclairjs)
