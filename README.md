@@ -38,10 +38,29 @@ reducedWordsWithCount.collect().then(function(results) {
 });
 ```
 
-## TryIt
-Everything you need to run **EclairJS** is setup in a Dockerfile. This provides you with several easy-to-use options: run a simple "hello world" example which counts the ten most frequently occurring words in a text file, run the REPL, and create new Notebooks using the JavaScript Spark API.  Please see [Using-the-Docker-Container](https://github.com/EclairJS/eclairjs-node/wikis/Using-the-Docker-Container).
+## Try It
+EclairJS Node provides a Docker container that contains all of its dependencies on [Dockerhub](https://hub.docker.com/r/eclairjs/minimal-gateway/).
 
-You can also try out **EclairJS** in Jupyter notebooks running under the [IBM Bluemix Cloud](https://github.com/EclairJS/eclairjs-node/wikis/EclairJS-with-IBM-Bluemix). 
+```bash
+docker pull eclairjs/minimal-gateway
+docker run eclairjs/minimal-gateway
+```
+
+After retrieving Docker's IP address (`docker-machine ip`), you will need to set two environment variables:
+
+```bash
+export JUPYTER_HOST=??.??.??.?? (your docker ip)
+export JUPYTER_PORT=8888
+```
+
+Now you can run the Word count example:
+
+```
+node --harmony examples/rddtop10.js ./dream.txt
+```
+
+Please see [Using-the-Docker-Container](https://github.com/EclairJS/eclairjs-node/wikis/Using-the-Docker-Container) for more about the Docker container.
+You can also try out **EclairJS** in Jupyter notebooks running under the [IBM Bluemix Cloud](https://github.com/EclairJS/eclairjs-node/wikis/EclairJS-with-IBM-Bluemix).
 
 ## Documentation
 * [API Docs](https://github.com/EclairJS/eclairjs-node/wiki/API-Documentation)
