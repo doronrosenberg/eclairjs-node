@@ -8,7 +8,7 @@ EclairJS Node is a node client for [Apache Spark](https://spark.apache.org).
 $ npm install eclairjs
 ```
 
-EclairJS Node also requires a running instance of [EclairJS Nashorn](https://github.com/EclairJS/eclairjs-nashorn/).
+EclairJS Node requires Node.js v0.12 or higher and also requires a running instance of [EclairJS Nashorn](https://github.com/EclairJS/eclairjs-nashorn/).
 
 Supported Spark versions can be found in the [Version](#version) section below.
 
