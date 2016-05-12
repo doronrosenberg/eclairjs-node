@@ -1,6 +1,6 @@
 EclairJS Node
 ===================
-EclairJS Node is a node client for [Apache Spark](https://spark.apache.org).
+EclairJS Node is a Node client for [Apache Spark](https://spark.apache.org).
 
 ## Installation
 
@@ -8,7 +8,7 @@ EclairJS Node is a node client for [Apache Spark](https://spark.apache.org).
 $ npm install eclairjs
 ```
 
-EclairJS Node requires Node.js v0.12 or higher and also requires a running instance of [EclairJS Nashorn](https://github.com/EclairJS/eclairjs-nashorn/).
+EclairJS Node requires Node 0.12 or higher and also requires a running instance of [EclairJS Nashorn](https://github.com/EclairJS/eclairjs-nashorn/).
 
 Supported Spark versions can be found in the [Version](#version) section below.
 
@@ -60,7 +60,7 @@ node --harmony examples/rddtop10.js ./dream.txt
 ```
 
 Please see [Using-the-Docker-Container](https://github.com/EclairJS/eclairjs-node/wikis/Using-the-Docker-Container) for more about the Docker container.
-You can also try out **EclairJS** in Jupyter notebooks running under the [IBM Bluemix Cloud](https://github.com/EclairJS/eclairjs-node/wikis/EclairJS-with-IBM-Bluemix).
+You can also try out EclairJS in Jupyter notebooks running under the [IBM Bluemix Cloud](https://github.com/EclairJS/eclairjs-node/wikis/EclairJS-with-IBM-Bluemix).
 
 ## Documentation
 * [API Docs](https://github.com/EclairJS/eclairjs-node/wiki/API-Documentation)
@@ -71,12 +71,26 @@ You can also try out **EclairJS** in Jupyter notebooks running under the [IBM Bl
 ## Community
 * [Google Group](https://groups.google.com/forum/#!forum/eclairjs)
 * [Slack](eclairjs.slack.com)
-* Getting Involved
 
 ## Build & Package
 If you would like to take the manual route in lieu of using the Dockerfile you can build the EclairJS components from source and setup your own local environment.  Please see [Build and Package](https://github.com/EclairJS/eclairjs-node/wikis/Build-and-Package) for more information.
 
-## Version
+## Progress
+
+|Spark Feature    |EclairJS Node Status|
+|-----------------|--------------------|
+|RDD              | Partial Support    |
+|SQL/Dataframes   | Partial Support    |
+|Streaming        | Partial Support    |
+|ml               | Partial Support    |
+|mllib             | Partial Support    |
+|GraphX           | Unsupported        |
+
+Refer to the [API Documentation](https://github.com/EclairJS/eclairjs-node/wikis/API-Documentation) for a list of what is currently implemented.  Please note as new APIs are implemented for EclairJS Node they will be added to the master branch.
+
+Contributions are always welcome via pull requests.
+
+## Versions
 Our goal is to keep the EclairJS master branch up to date with the latest version of Spark. When new versions of Spark require code changes, we create a separate branch. The table below shows what is available now.
 
 |EclairJS Version/Tag | Apache Spark Version |
@@ -84,5 +98,3 @@ Our goal is to keep the EclairJS master branch up to date with the latest versio
 | 0.1            | 1.5.1 |
 | 0.2 - 0.4      | 1.6.0 |
 | 0.5  (master)  | 1.6.0 |
-
-Please note as new APIs are implemented for EclairJS they will be added to the master branch.  Refer to the [API Documentation](https://github.com/EclairJS/eclairjs-node/wikis/API-Documentation) for a list of what is currently implemented.  **EclairJS** has been tested on OSX and Linux.
