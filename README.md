@@ -43,7 +43,7 @@ EclairJS Node provides a Docker container that contains all of its dependencies 
 
 ```bash
 docker pull eclairjs/minimal-gateway
-docker run eclairjs/minimal-gateway
+docker run -p 8888:8888 eclairjs/minimal-gateway
 ```
 
 After retrieving Docker's IP address (`docker-machine ip`), you will need to set two environment variables:
@@ -74,10 +74,10 @@ You can also try out **EclairJS** in Jupyter notebooks running under the [IBM Bl
 * Getting Involved
 
 ## Build & Package
-If you would like to take the manual route in lieu of using the Dockerfile you can build the **EclairJS** components from source and setup your own local environment.  Please see [Build and Package](https://github.com/EclairJS/eclairjs-node/wikis/Build-and-Package) for more information.
+If you would like to take the manual route in lieu of using the Dockerfile you can build the EclairJS components from source and setup your own local environment.  Please see [Build and Package](https://github.com/EclairJS/eclairjs-node/wikis/Build-and-Package) for more information.
 
 ## Version
-Our goal is to keep the **EclairJS** master branch up to date with the latest version of Spark. When new versions of Spark require code changes, we create a separate branch. The table below shows what is available now.
+Our goal is to keep the EclairJS master branch up to date with the latest version of Spark. When new versions of Spark require code changes, we create a separate branch. The table below shows what is available now.
 
 |EclairJS Version/Tag | Apache Spark Version |
 | -------- | -------- |
@@ -85,4 +85,4 @@ Our goal is to keep the **EclairJS** master branch up to date with the latest ve
 | 0.2 - 0.4      | 1.6.0 |
 | 0.5  (master)  | 1.6.0 |
 
-Please note as new APIs are implemented for **EclairJS** they will be added to the master branch.  Refer to the [API Documentation](https://github.com/EclairJS/eclairjs-node/wikis/API-Documentation) for a list of what is currently implemented.  **EclairJS** has been tested on OSX and Linux.
+Please note as new APIs are implemented for EclairJS they will be added to the master branch.  Refer to the [API Documentation](https://github.com/EclairJS/eclairjs-node/wikis/API-Documentation) for a list of what is currently implemented.  **EclairJS** has been tested on OSX and Linux.
