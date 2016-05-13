@@ -70,7 +70,7 @@ You can also try out EclairJS in Jupyter notebooks running under the [IBM Bluemi
 
 ## Community
 * [Google Group](https://groups.google.com/forum/#!forum/eclairjs)
-* [Slack](eclairjs.slack.com)
+* [Slack](https://eclairjs.slack.com)
 
 ## Build & Package
 If you would like to take the manual route in lieu of using the Dockerfile you can build the EclairJS components from source and setup your own local environment.  Please see [Build and Package](https://github.com/EclairJS/eclairjs-node/wikis/Build-and-Package) for more information.
