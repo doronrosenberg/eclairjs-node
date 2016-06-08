@@ -1,6 +1,6 @@
 EclairJS Node
 ===================
-EclairJS Node is a Node client for [Apache Spark](https://spark.apache.org).
+EclairJS Node provides Node.js language bindings for [Apache Spark](https://spark.apache.org).
 
 ## Installation
 
